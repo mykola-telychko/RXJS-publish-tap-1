@@ -15,8 +15,9 @@ const exmpl_1 = publish()(
   )
 );
 
-const subscribe = exmpl_1.subscribe((v) => console.log(`Sbscrber 1: ${v}`));
-const subscribeTwo = exmpl_1.subscribe((v) => console.log(`Sbscrber 2: ${v}`));
+const subscribe1 = exmpl_1.subscribe((v) => console.log(`Sbscrber 1: ${v}`));
+const subscribe2 = exmpl_1.subscribe((v) => console.log(`Sbscrber 2: ${v}`));
+const subscribe3 = exmpl_1.subscribe((v) => console.log(`Sbscrber 3: ${v}`));
 
 // call connect after 5 seconds, causing source to begin emitting items
 setTimeout(() => {
